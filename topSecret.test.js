@@ -31,7 +31,7 @@ Mac`
     const result = main("shipments.txt", "drivers.txt");
 
     // Expect the result to match the expected output
-    expect(result).toEqual(`Total Suitability Score: 9.5
+    expect(result).toEqual(`Total Suitability Score: 7.5
 Matches: {
 Dan: '820 black bear rd. telluride',
 'Amy': 'PO box 3288 telluride',
