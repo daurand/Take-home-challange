@@ -10,7 +10,7 @@ To use this algorithm clone this repository. Navigate to the clone in your comma
 node topSecret.js <location_file> <driver_file>
 ```
 
-replace location_file and driver_file with the respective paths to the .txt files you wish to pass in as arguments. For example, if the two files are named destinations.txt and drivers.txt, the command would be
+Replace <location_file> and <driver_file> with the respective paths to the .txt files you wish to pass in as arguments. For example, if the two files are named destinations.txt and drivers.txt, the command would be
 
 ```bash
 node topSecret.js destinations.txt drivers.txt.
