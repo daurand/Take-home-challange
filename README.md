@@ -1,4 +1,4 @@
-# Take-home-challange
+# Take-home-challenge
 
 ## Instructions
 
