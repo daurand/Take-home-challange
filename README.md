@@ -16,7 +16,7 @@ Replace <location_file> and <driver_file> with the respective paths to the .txt 
 node topSecret.js destinations.txt drivers.txt.
 ```
 
-This algorithm will output the total suitability score(SS) as well as the location/driver matches in the command line.
+This algorithm will output the total suitability score(SS) as well as the location/driver matches in the terminal.
 
 ## Testing
 
