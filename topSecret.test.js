@@ -5,20 +5,18 @@ describe("main", () => {
   beforeAll(() => {
     // Create the sample shipment locations file
     fs.writeFileSync(
-      "shipments.txt",
-      `42 Wallaby Way, Sydney
-22 Elm St.
-1 Happy Ave.
-`
+      "locations.txt",
+      `820 black bear rd. telluride
+PO box 3288 telluride
+1 hacker way.`
     );
 
     // Create the sample drivers file
     fs.writeFileSync(
       "drivers.txt",
-      `John
-Jane
-Jim
-`
+      `Daniel
+Amy
+Mac`
     );
   });
 
@@ -33,11 +31,11 @@ Jim
     const result = main("shipments.txt", "drivers.txt");
 
     // Expect the result to match the expected output
-    expect(result).toEqual(`Total Suitability Score: 5.5
-Assignments:
-42 Wallaby Way, Sydney => John
-22 Elm St. => Jane
-1 Happy Ave. => Jim
-`);
+    expect(result).toEqual(`Total Suitability Score: 9.5
+Matches: {
+Dan: '820 black bear rd. telluride',
+'Amy': 'PO box 3288 telluride',
+'Mac': '1 hacker way.'
+}`);
   });
 });
