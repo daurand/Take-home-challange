@@ -20,7 +20,7 @@ function findSS(location, driver) {
   }
 
   if (location.length % driver.length === 0 || driver.length % location.length === 0) { // if common factor.
-    baseSS *= 1.5;
+    baseSS *= 0.5;
   }
 
   return baseSS;

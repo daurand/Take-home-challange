@@ -5,7 +5,7 @@ describe("main", () => {
   beforeAll(() => {
     // Create the sample shipment locations file
     fs.writeFileSync(
-      "locations.txt",
+      "shipments.txt",
       `820 black bear rd. telluride
 PO box 3288 telluride
 1 hacker way.`
